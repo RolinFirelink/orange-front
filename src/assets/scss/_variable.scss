@@ -1,0 +1,21 @@
+$theme-color: #f03333;
+$theme-bgclor: #aaffff;
+$bgcolor01:red;
+$loginImg: url('/img/login.png');
+
+@mixin left($value: 10px) {
+    float: left;
+    margin-right: $value;
+}
+
+// 循环使用
+@for $i from 1 to 10 {
+  .border-#{$i} {
+        border: #{$i}px solid blue;
+ }
+}
+
+//自定义函数
+@function double($n) {
+    @return $n * 2;
+}
